@@ -62,7 +62,7 @@ jobs:
     - name: Deploy
       uses: appleboy/ssh-action@master
       with:
-        host: 52.79.60.93      #aws ip
+        host: 13.209.96.171      #aws ip
         port: 22		#ssh 포트
         username: ubuntu	#ec2 사용자. aws에서 whoami 명령 실행으로 확인. 명령라인 맨 앞에서 써있음
         key: ${{ secrets.PRIVATE_KEY }} # pem 키. ec2 생성시 public 키 생성하여 다운로드 받은 ~.pem 파일을 메모장으로 열어 그 안의 모든 내용 복사해서 변수 값으로 등록
